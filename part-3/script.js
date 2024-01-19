@@ -11,4 +11,4 @@ function samplePromise(){
             }
         }, 5000) //5 seconds
     })
-}
+}node
