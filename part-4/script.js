@@ -26,3 +26,19 @@ document.querySelector("#generate").addEventListener("click", () => {
   });
 
   //other types of workers are called Shared and Service Workers.
+
+
+const worker = new Worker("./worker.js");
+
+document.querySelector("#workerbutton").addEventListener("click", () => {
+  const input = document.querySelector("#input").value;
+  worker.postMessage({
+    command: "worker",
+    input,
+  });
+});
+
+worker.addEventListener("message", (message) => {
+  document.querySelector("#output").textContent =
+    `Finished generating ${message.data} input!`;
+});

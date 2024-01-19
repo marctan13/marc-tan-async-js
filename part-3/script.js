@@ -1,5 +1,6 @@
 //setTimeout is an asyc function that accepts a function and takes in a second parameter how long before it call that function in milliseconds
 //setTimeout can be nested inside a Promise constructor which accepts a function executor
+//the alarm function can return a new Promise 
 
 function samplePromise(){
     return new Promise((resolve,reject) => {

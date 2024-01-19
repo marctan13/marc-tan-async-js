@@ -3,7 +3,8 @@
 // Having synchronous javascript can make then webpage load slower or has a chance to become unresponsive while it waits for
 // a part of code to finish.
 //Async Javascript does not depend on other codes to run.
-//Event handlers are considered as asynchronous functions
+//Event handlers are considered as asynchronous functions and a callback
+//callbacks are functions that are called within another function
 
 const factEl = document.getElementById("fact");
 const factBtn = document.getElementById("fact-btn");
@@ -23,4 +24,4 @@ factBtn.addEventListener("click", () => {
 
   //sends the request
   xhr.send()
-});
+}
