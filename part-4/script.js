@@ -1,5 +1,6 @@
 //worker allows the webpage to run more resourcce-intensive tasks. their functions will run in the background not affecting the resources of the main file.
 //they dont have access to DOM manipulation. 
+//workers do not take space on the main thread
 //the codes will run as soon the worker Constructor is called
 
 //how to create a new worker
